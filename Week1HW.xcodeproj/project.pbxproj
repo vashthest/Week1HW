@@ -21,7 +21,8 @@
 		1975F17E1990A88F00AF4981 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1975F17D1990A88F00AF4981 /* SettingsViewController.swift */; };
 		1975F1801990B31400AF4981 /* FileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1975F17F1990B31400AF4981 /* FileViewController.swift */; };
 		1975F1841990B7C300AF4981 /* FavTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1975F1831990B7C300AF4981 /* FavTabViewController.swift */; };
-		1975F1861990BDB400AF4981 /* CreateAccountFlowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1975F1851990BDB400AF4981 /* CreateAccountFlowViewController.swift */; };
+		19C6F9C91991932500ABB7D0 /* CreateAccountTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19C6F9C81991932500ABB7D0 /* CreateAccountTableViewController.swift */; };
+		19C6F9CB199205D500ABB7D0 /* SignInTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19C6F9CA199205D500ABB7D0 /* SignInTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,7 +54,8 @@
 		1975F17D1990A88F00AF4981 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		1975F17F1990B31400AF4981 /* FileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FileViewController.swift; sourceTree = "<group>"; };
 		1975F1831990B7C300AF4981 /* FavTabViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavTabViewController.swift; sourceTree = "<group>"; };
-		1975F1851990BDB400AF4981 /* CreateAccountFlowViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateAccountFlowViewController.swift; sourceTree = "<group>"; };
+		19C6F9C81991932500ABB7D0 /* CreateAccountTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateAccountTableViewController.swift; sourceTree = "<group>"; };
+		19C6F9CA199205D500ABB7D0 /* SignInTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -142,7 +144,8 @@
 				1975F17D1990A88F00AF4981 /* SettingsViewController.swift */,
 				1975F17F1990B31400AF4981 /* FileViewController.swift */,
 				1975F1831990B7C300AF4981 /* FavTabViewController.swift */,
-				1975F1851990BDB400AF4981 /* CreateAccountFlowViewController.swift */,
+				19C6F9C81991932500ABB7D0 /* CreateAccountTableViewController.swift */,
+				19C6F9CA199205D500ABB7D0 /* SignInTableViewController.swift */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
@@ -253,9 +256,10 @@
 				1975F17219908F1E00AF4981 /* CreateAccountViewController.swift in Sources */,
 				1975F1561990830400AF4981 /* ViewController.swift in Sources */,
 				1975F1801990B31400AF4981 /* FileViewController.swift in Sources */,
+				19C6F9CB199205D500ABB7D0 /* SignInTableViewController.swift in Sources */,
 				1975F1541990830400AF4981 /* AppDelegate.swift in Sources */,
-				1975F1861990BDB400AF4981 /* CreateAccountFlowViewController.swift in Sources */,
 				1975F17A1990934F00AF4981 /* TermsViewController.swift in Sources */,
+				19C6F9C91991932500ABB7D0 /* CreateAccountTableViewController.swift in Sources */,
 				1975F1841990B7C300AF4981 /* FavTabViewController.swift in Sources */,
 				1975F17E1990A88F00AF4981 /* SettingsViewController.swift in Sources */,
 			);
@@ -445,6 +449,7 @@
 				1975F16C1990830400AF4981 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1975F16D1990830400AF4981 /* Build configuration list for PBXNativeTarget "Week1HWTests" */ = {
 			isa = XCConfigurationList;
@@ -453,6 +458,7 @@
 				1975F16F1990830400AF4981 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

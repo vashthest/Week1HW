@@ -14,11 +14,12 @@ class FileViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Need to make this hit a global var so the other tabs can read it
-        // Note that we should also reset this when the user logs out
-        tabBarController.tabBar.hidden = true
-        favoriteActionImageView.hidden = true
         // Do any additional setup after loading the view.
+    }
+    
+    override func viewWillAppear(animated: Bool) {
+        tabBarController.tabBar.hidden = true
+        favoriteActionImageView.hidden = !kIsFavorite
     }
 
     override func didReceiveMemoryWarning() {
@@ -31,7 +32,8 @@ class FileViewController: UIViewController {
     }
     
     @IBAction func toggleFavoriteButton(sender: AnyObject) {
-        favoriteActionImageView.hidden = !favoriteActionImageView.hidden
+        kIsFavorite = !kIsFavorite
+        favoriteActionImageView.hidden = !kIsFavorite
     }
 
     /*

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>2F7917D1-B5D1-40C2-AE3F-87F8FED049EC</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Week1HW</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>B4D94C5476C3C0ED13C73669637BB27B2CF8EDC4</key>
+		<string>https://github.com/vashthest/Week1HW.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Week1HW.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>B4D94C5476C3C0ED13C73669637BB27B2CF8EDC4</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/vashthest/Week1HW.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>B4D94C5476C3C0ED13C73669637BB27B2CF8EDC4</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>B4D94C5476C3C0ED13C73669637BB27B2CF8EDC4</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Week1HW</string>
+		</dict>
+	</array>
+</dict>
+</plist>

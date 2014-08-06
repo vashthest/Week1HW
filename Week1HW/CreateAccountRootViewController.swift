@@ -12,7 +12,10 @@ class CreateAccountRootViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        performSegueWithIdentifier("CreateAccountSegue", sender: nil)
+        if (!kSignedOut) {
+            performSegueWithIdentifier("CreateAccountSegue", sender: nil)
+            kSignedOut = false
+        }
         // Do any additional setup after loading the view.
     }
 
@@ -21,6 +24,14 @@ class CreateAccountRootViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    override func viewWillAppear(animated: Bool) {
+        navigationController.navigationBarHidden = true
+        kIsFavorite = false
+    }
+    
+    override func viewWillDisappear(animated: Bool) {
+        navigationController.navigationBarHidden = false
+    }
 
     /*
     // MARK: - Navigation

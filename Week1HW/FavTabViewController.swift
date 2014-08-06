@@ -11,13 +11,22 @@ import UIKit
 class FavTabViewController: UIViewController {
 
     @IBOutlet weak var favsImageView: UIImageView!
+    @IBOutlet weak var existingFavFileButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Need to check for global var here to change image
-        favsImageView.image = UIImage(named:"existing_favorites")
-        favsImageView.image = UIImage(named:"empty_favorites")
         // Do any additional setup after loading the view.
+    }
+    
+    override func viewWillAppear(animated: Bool) {
+        if (kIsFavorite) {
+            favsImageView.image = UIImage(named:"existing_favorites")
+            existingFavFileButton.enabled = true
+        } else {
+            favsImageView.image = UIImage(named:"empty_favorites")
+            existingFavFileButton.enabled = false
+        }
     }
 
     override func didReceiveMemoryWarning() {
