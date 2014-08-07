@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1941921419930496007D94F6 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1941921319930496007D94F6 /* WelcomeViewController.swift */; };
 		1975F1541990830400AF4981 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1975F1531990830400AF4981 /* AppDelegate.swift */; };
 		1975F1561990830400AF4981 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1975F1551990830400AF4981 /* ViewController.swift */; };
 		1975F1591990830400AF4981 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1975F1571990830400AF4981 /* Main.storyboard */; };
@@ -36,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1941921319930496007D94F6 /* WelcomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 		1975F14E1990830400AF4981 /* Week1HW.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Week1HW.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1975F1521990830400AF4981 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1975F1531990830400AF4981 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -146,6 +148,7 @@
 				1975F1831990B7C300AF4981 /* FavTabViewController.swift */,
 				19C6F9C81991932500ABB7D0 /* CreateAccountTableViewController.swift */,
 				19C6F9CA199205D500ABB7D0 /* SignInTableViewController.swift */,
+				1941921319930496007D94F6 /* WelcomeViewController.swift */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
@@ -262,6 +265,7 @@
 				19C6F9C91991932500ABB7D0 /* CreateAccountTableViewController.swift in Sources */,
 				1975F1841990B7C300AF4981 /* FavTabViewController.swift in Sources */,
 				1975F17E1990A88F00AF4981 /* SettingsViewController.swift in Sources */,
+				1941921419930496007D94F6 /* WelcomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

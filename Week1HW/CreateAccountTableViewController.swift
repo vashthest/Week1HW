@@ -15,6 +15,7 @@ class CreateAccountTableViewController: UITableViewController {
     @IBOutlet weak var lastNameTextField: UITextField!
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
+    @IBOutlet weak var passwordImageView: UIImageView!
     
     var emailTest = NSPredicate(format: "SELF MATCHES %@", argumentArray: ["[A-Z0-9a-z\\._%+]+@([A-Za-z0-9]+\\.)+[A-Za-z]{2,4}"])
     
@@ -25,6 +26,9 @@ class CreateAccountTableViewController: UITableViewController {
         emailTextField.text = ""
         passwordTextField.text = ""
         createButton.enabled = false
+        passwordImageView.hidden = true
+        passwordImageView.frame.origin.y = 210
+
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
@@ -39,6 +43,33 @@ class CreateAccountTableViewController: UITableViewController {
 
     @IBAction func onTap(sender: AnyObject) {
         view.endEditing(true)
+        if (passwordTextField.text == "") {
+            passwordImageView.hidden = true
+        } else {
+            passwordImageView.frame.origin.y = 210
+        }
+    }
+    
+    @IBAction func onEditPasswordBegin(sender: AnyObject) {
+        passwordImageView.hidden = false
+        setPasswordImage()
+    }
+    
+    func setPasswordImage() {
+        passwordImageView.frame.origin.y = 210
+        var str = passwordTextField.text + ""
+        
+        if (str == "") {
+            passwordImageView.image = UIImage(named:"0")
+        } else if (countElements(str) > 9) {
+            passwordImageView.image = UIImage(named:"4")
+        } else if (countElements(str) > 6) {
+            passwordImageView.image = UIImage(named:"3")
+        } else if (countElements(str) > 3) {
+            passwordImageView.image = UIImage(named:"2")
+        } else {
+            passwordImageView.image = UIImage(named:"1")
+        }
     }
     
     @IBAction func onEditChanged(sender: AnyObject) {
@@ -56,6 +87,8 @@ class CreateAccountTableViewController: UITableViewController {
         if (emailIsValid) {
             emailTextField.textColor = UIColor(red: 0, green: 0, blue: 0, alpha: 1.0)
         }
+        
+        setPasswordImage()
     }
     
     @IBAction func onEmailDoneEditing(sender: AnyObject) {
